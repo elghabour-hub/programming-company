@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="WebApplication2.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    
+     <script defer="defer" src="js/bundle.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            
+    <div class="container-fluid">
+      <section class="top-menu">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-light w-100">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand p-0" href="Home.aspx" >
+                  <img src="images/new-logo.png" alt="شركة عربي"/>
+
+              </a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item p-2">
+                    <a class="nav-link active" href="Home.aspx">Home</a>
+                  </li>
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="AboutUs.aspx">About Us</a>
+                  </li>
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="projects.aspx">Projects</a>
+                  </li>
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="blog.aspx">Blog</a>
+                  </li>
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="contact.aspx">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+            </asp:ContentPlaceHolder>
+        
+             <footer>
+        <div class="row">
+          <div class="col-12 pt-5">
+            <h5
+              class="text-center wow animate__animated animate__zoomIn"
+              data-wow-duration="2s"
+            >
+              Arabi Company
+            </h5>
+          </div>
+          <div
+            id="footerNavLinks"
+            class="col-12 d-flex justify-content-center text-center"
+          >
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item p-2">
+                    <a class="nav-link active" href="Home.aspx">Home</a>
+                  </li>
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="aboutUs.aspx">Who Are We</a>
+                  </li>
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="projects.aspx">Latest Projects</a>
+                  </li>
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="blog.aspx">Blog</a>
+                  </li>
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="contact.aspx">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+         
+          </div>
+         
+       
+          
+        </div>
+      </footer>
+        </div>
+
+    </form>
+</body>
+</html>
